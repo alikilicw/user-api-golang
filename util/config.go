@@ -13,6 +13,8 @@ type Config struct {
 	EmailSenderPassword string        `mapstructure:"EMAIL_SENDER_PASSWORD"`
 	TokenSymmetricKey   string        `mapstructure:"TOKEN_SYMMETRIC_KEY"`
 	AccessTokenDuration time.Duration `mapstructure:"ACCESS_TOKEN_DURATION"`
+	DbDriver            string        `mapstructure:"DB_DRIVER"`
+	DbSource            string        `mapstructure:"DB_SOURCE"`
 }
 
 // LoadConfig reads configuration from file or environment variables.
